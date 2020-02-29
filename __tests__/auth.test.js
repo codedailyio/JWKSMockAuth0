@@ -15,6 +15,7 @@ describe("Auth Test", () => {
 
   it("should verify the token", async () => {
     const token = jwks.token({});
+
     const data = await verifyAuth0Token(token);
 
     expect(data).toEqual({});

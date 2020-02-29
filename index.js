@@ -12,7 +12,6 @@ const getKey = (header, callback) => {
       return;
     }
     const signingKey = key.getPublicKey();
-
     callback(null, signingKey);
   });
 };
